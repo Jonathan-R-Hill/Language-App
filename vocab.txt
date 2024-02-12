@@ -1,0 +1,70 @@
+가족,Family
+기쁨,Joy
+슬픔,Sadness
+옷, Clothes
+자동차, Car
+버스, Bus
+비행기, Airplane
+오늘, Today
+어제, Yesterday
+내일, Tomorrow
+프로그래밍, Programming
+변수, Variable
+함수, Function
+조건문, Conditional statement
+반복문, Loop statement
+배열, Array
+객체, Object
+클래스, Class
+메서드, Method
+인터페이스, Interface
+모듈, Module
+라이브러리, Library
+알고리즘, Algorithm
+데이터베이스, Database
+쿼리, Query
+인덱스, Index
+변수형, Data type
+포인터, Pointer
+문자열, String
+숫자형, Numeric type
+함수 호출, Function call
+매개변수, Parameter
+반환값, Return value
+연산자, Operator
+조건 연산자, Conditional operator
+반복 연산자, Loop operator
+주석, Comment
+디버깅, Debugging
+예외 처리, Exception handling
+모듈화, Modularization
+상속, Inheritance
+다형성, Polymorphism
+추상화, Abstraction
+캡슐화, Encapsulation
+구조체, Struct
+포인터 연산, Pointer arithmetic
+파일 입출력, File I/O
+라이브러리 호출, Library invocation
+스레드, Thread
+동기화, Synchronization
+날씨, Weather
+맑음, Sunny
+흐림, Cloudy
+비, Rain
+눈, Snow
+구름, Cloud
+바람, Wind
+폭풍, Storm
+안개, Fog
+한파, Cold wave
+폭염, Heat wave
+천둥, Thunder
+번개, Lightning
+우박, Hail
+강우량, Precipitation amount
+기온, Temperature
+습도, Humidity
+바람세기, Wind speed
+강수확률, Chance of precipitation
+일조시간, Sunshine duration
