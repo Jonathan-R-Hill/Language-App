@@ -4,9 +4,9 @@ import sys
 import FileIO
 import Func
 
-vocab_file_path = "vocab.txt"
-wrong_file_path = "wrong.txt"
-known_vocab_path = "known.txt"
+vocab_file_path = "zvocab.txt"
+wrong_file_path = "zwrong.txt"
+known_vocab_path = "zknown.txt"
 
 all_words_map = FileIO.read_data_file(vocab_file_path)
 known_words_map = FileIO.read_data_file(known_vocab_path)
