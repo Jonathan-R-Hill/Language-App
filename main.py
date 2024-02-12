@@ -22,18 +22,13 @@ all_words_map = functions.shuffle_dict(all_words_map)
 known_words_map = functions.shuffle_dict(known_words_map)
 wrong_words_map = functions.shuffle_dict(wrong_words_map)
 
-
-print(wrong_words_map)
-print(known_words_map)
-
 sys.stdout.reconfigure(encoding='utf-8')
-
 
 # -------------------- Run -------------------- #
 
 # Review known words
 if len(known_words_map) != 0:
-  functions.review_check(known_vocab_path, wrong_file_path, known_vocab_path, "Review")
+  functions.review_check(wrong_file_path, known_words_map, "Review")
 
 # Past wrong words
 if len(wrong_words_map) != 0:
