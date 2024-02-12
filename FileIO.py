@@ -16,8 +16,8 @@ def read_data_file(file_path: str):
         parts = line.strip().split(',')
         
         if len(parts) == 2:
-            key, value = parts
-            vocab_map[key.strip()] = value.strip()
+            korean, english = parts
+            vocab_map[korean.strip()] = english.strip()
   except FileNotFoundError:
       print("File not found.")
   except Exception as e:
