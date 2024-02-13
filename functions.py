@@ -16,17 +16,15 @@ def test_words(known_file_path: str, wrong_file_path: str, vocab_to_test: map, s
   """
   print(section_testing)
   for korean, english in vocab_to_test.items():
-    if any(char.isalpha() for char in english):
-      print(f'Word to translate: {english}')
-      user_input = input("Enter the Korean translation: ")
-
-      if user_input == korean:
-        print(f"Correct! {english} = {korean}")
-        add_to_known_words_check(known_file_path, english, korean)
-      else:
-        print(f"Nice try but: {english} = {korean}")
-        fileIO.write_word_to_file(wrong_file_path, english, korean)
-      print("\n")
+    print(f'Word to translate: {english}')
+    user_input = input("Enter the Korean translation: ")
+    if user_input == korean:
+      print(f"Correct! {english} = {korean}")
+      add_to_known_words_check(known_file_path, english, korean)
+    else:
+      print(f"Nice try but: {english} = {korean}")
+      fileIO.write_word_to_file(wrong_file_path, english, korean)
+    print("\n")
 
 
 def add_to_known_words_check(file_path: str, english: str, korean: str):

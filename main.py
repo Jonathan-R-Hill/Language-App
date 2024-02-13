@@ -24,19 +24,17 @@ vocab_map = fileIO.read_data_file(vocab_file_path)
 known_words_map = fileIO.read_data_file(known_vocab_path)
 wrong_words_map = fileIO.read_data_file(wrong_file_path)
 
-# Shuffle the maps
-vocab_map = functions.shuffle_dict(vocab_map)
-known_words_map = functions.shuffle_dict(known_words_map)
-wrong_words_map = functions.shuffle_dict(wrong_words_map)
-
 # Review known words
 if len(known_words_map) != 0:
+  known_words_map = functions.shuffle_dict(known_words_map)
   functions.review_check(wrong_file_path, known_words_map, "Review")
 
 # Past wrong words
 if len(wrong_words_map) != 0:
+  wrong_words_map = functions.shuffle_dict(wrong_words_map)
   functions.test_words(known_vocab_path, wrong_file_path, wrong_words_map, "Past Incorrect Words")
 
 # All Words that are not known
+vocab_map = functions.shuffle_dict(vocab_map)
 functions.test_words(known_vocab_path, wrong_file_path, vocab_map, "All Words")
 

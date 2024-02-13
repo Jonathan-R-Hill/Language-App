@@ -45,6 +45,7 @@ def write_word_to_file(file_path: str, english: str, korean: str):
   except Exception as e:
     print("An error occurred:", e)
 
+
 def update_vocab_file(vocab_word_path: str, known_words_path: str):
     """
     Updates the vocabulary file by removing words that are present in the known words file.
@@ -81,6 +82,15 @@ def update_vocab_file(vocab_word_path: str, known_words_path: str):
 
 
 def remove_duplicate_entries(file_path: str):
+  """
+    Removes duplicate entries from a file.
+
+    Parameters:
+    file_path (str): The path to the file to be processed.
+
+    Returns:
+    None
+  """
   temp_list = []
   with open(file_path, 'r', encoding='utf-8') as file:
     for line in file:
