@@ -25,6 +25,8 @@ wrong_words_map = functions.shuffle_dict(wrong_words_map)
 sys.stdout.reconfigure(encoding='utf-8')
 
 # -------------------- Run -------------------- #
+# Update files removing known words from the vocab list
+fileIO.update_vocab_file(vocab_word_path=vocab_file_path, known_words_path=known_vocab_path)
 
 # Review known words
 if len(known_words_map) != 0:

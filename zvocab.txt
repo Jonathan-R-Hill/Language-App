@@ -1,4 +1,3 @@
-가족,Family
 기쁨,Joy
 슬픔,Sadness
 옷, Clothes

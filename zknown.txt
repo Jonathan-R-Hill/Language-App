@@ -1,1 +1,2 @@
 가족,Family
+내일,Tomorrow

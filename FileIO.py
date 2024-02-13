@@ -45,3 +45,37 @@ def write_word_to_file(file_path: str, english: str, korean: str):
   except Exception as e:
     print("An error occurred:", e)
 
+def update_vocab_file(vocab_word_path: str, known_words_path: str):
+    """
+    Updates the vocabulary file by removing words that are present in the known words file.
+
+    Parameters:
+    vocab_word_path (str): The file path to the vocabulary file to be updated.
+    known_words_path (str): The file path to the known words file.
+
+    Returns:
+    None
+    """
+    # Read known words and store them in a set
+    known_words_set = set()
+    with open(known_words_path, 'r', encoding='utf-8') as file:
+      for line in file:
+          parts = line.strip().split(',')
+          if len(parts) == 2:
+              korean, english = parts
+              known_words_set.add(korean.strip())
+
+    # Read vocabulary file and filter out known words
+    temp_list = []
+    with open(vocab_word_path, 'r', encoding='utf-8') as file:
+      for line in file:
+          parts = line.strip().split(',')
+          if len(parts) == 2:
+              korean, english = parts
+              if korean.strip() not in known_words_set:
+                  temp_list.append(line.strip())
+
+    #  Write  content back to vocabulary file
+    with open(vocab_word_path, 'w', encoding='utf-8') as file:
+        file.write('\n'.join(temp_list))
+
