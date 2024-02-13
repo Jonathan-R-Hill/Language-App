@@ -1,6 +1,8 @@
 # WIP
-- Need to add functionality to remove words from known list from the main vocab file
-- may add GUI once functionality is complete
+- [x] Need to add functionality to remove words from known list from the main vocab file
+- [x] Need to add duplicate word checking
+- [x] need to make randomise word order
+- [ ] Add GUI once functionality is complete - Start soon
   
 # Usage
 
