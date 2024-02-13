@@ -6,7 +6,6 @@
 비행기, Airplane
 오늘, Today
 어제, Yesterday
-내일, Tomorrow
 프로그래밍, Programming
 변수, Variable
 함수, Function

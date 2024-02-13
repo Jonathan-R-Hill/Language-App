@@ -79,3 +79,15 @@ def update_vocab_file(vocab_word_path: str, known_words_path: str):
     with open(vocab_word_path, 'w', encoding='utf-8') as file:
         file.write('\n'.join(temp_list))
 
+
+def remove_duplicate_entries(file_path: str):
+  temp_list = []
+  with open(file_path, 'r', encoding='utf-8') as file:
+    for line in file:
+        parts = line.strip().split(',')
+        if len(parts) == 2:
+            korean, english = parts
+            if line.strip() not in temp_list:
+                temp_list.append(line.strip())
+  with open(file_path, 'w', encoding='utf-8') as file:
+    file.write('\n'.join(temp_list))
