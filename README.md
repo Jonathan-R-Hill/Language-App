@@ -4,6 +4,8 @@
 - [x] need to make randomise word order
 - [ ] need to make it so wrong words that are correctly answered are moved out of the wrong file
 - [x] Add GUI option
+- [x] change GUI colour to not be bright white
+- [x] GUI to start on a random word each time
   
 # Usage
 
