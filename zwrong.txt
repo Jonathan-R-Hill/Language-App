@@ -1,2 +1,0 @@
-포인터 연산,Pointer arithmetic
-구름,Cloud

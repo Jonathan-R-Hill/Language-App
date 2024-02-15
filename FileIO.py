@@ -39,7 +39,7 @@ def write_word_to_file(file_path: str, english: str, korean: str):
   """
   try:
     with open(file_path, 'a', encoding='utf-8') as file:
-      file.write(f"{korean},{english}\n")  
+      file.write(f"\n{korean},{english}")  
   except FileNotFoundError:
     print("File not found.")
   except Exception as e:

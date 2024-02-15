@@ -2,7 +2,6 @@
 슬픔,Sadness
 옷, Clothes
 자동차, Car
-버스, Bus
 비행기, Airplane
 오늘, Today
 어제, Yesterday

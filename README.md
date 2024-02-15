@@ -3,8 +3,7 @@
 - [x] Need to add duplicate word checking
 - [x] need to make randomise word order
 - [ ] need to make it so wrong words that are correctly answered are moved out of the wrong file
-- [ ] add summary after the wrong words have been completed
-- [ ] Add GUI once functionality is complete
+- [x] Add GUI option
   
 # Usage
 
