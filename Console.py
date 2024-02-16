@@ -33,10 +33,11 @@ def main():
   global vocab_map
   global known_words_map
   global wrong_words_map
+  
   # Review known words
   if len(known_words_map) != 0:
     known_words_map = functions.shuffle_dict(known_words_map)
-    functions.review_check(wrong_file_path, known_words_map, "Review")
+    functions.test_wrong_words(wrong_file_path, wrong_words_map)
 
   # Past wrong words
   if len(wrong_words_map) != 0:

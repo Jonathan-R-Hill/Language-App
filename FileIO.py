@@ -101,3 +101,17 @@ def remove_duplicate_entries(file_path: str):
                 temp_list.append(line.strip())
   with open(file_path, 'w', encoding='utf-8') as file:
     file.write('\n'.join(temp_list))
+
+
+def remove_word_from_file(file_path: str, current_korean_word: str):
+  temp_list = []
+  with open(file_path, 'r', encoding='utf-8') as file:
+    for line in file:
+        parts = line.strip().split(',')
+        if len(parts) == 2:
+            korean, english = parts
+            if (line.strip() not in temp_list) and (current_korean_word != korean):
+                temp_list.append(line.strip())
+                
+    with open(file_path, 'w', encoding='utf-8') as file:
+      file.write('\n'.join(temp_list))
